@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Тихомиров](https://up.htmlacademy.ru/htmlcss/38/user/2411931).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
 
 ---
 
