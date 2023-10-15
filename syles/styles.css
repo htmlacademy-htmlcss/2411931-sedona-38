@@ -18,8 +18,13 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    height: 100%;
     font-family: "PT Sans" , "Arial" , sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -34,6 +39,12 @@ img {
 }
 
 .page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1200px;
+    min-height: 100%;
+    background-color: #fff;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
@@ -50,8 +61,19 @@ img {
     overflow: hidden;
 }
 
-.page-header {
-    background: #FFF;
+.navigation {
+    display: flex;
+    margin: 0 70px;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.navigation-user {
+    margin-right: 20px;
 }
 
 .navigation-link {
@@ -81,6 +103,10 @@ img {
     text-align: center;
     text-decoration: none;
     background-color: #756157;
+}
+
+.main-content {
+    flex-grow: 1;
 }
 
 
@@ -185,6 +211,7 @@ img {
 }
 
 .form-title {
+    color: #000;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -256,6 +283,9 @@ img {
 }
 
 /**Стили для каталога*/
+.inner-header {
+    margin-left: 70px;
+}
 
 .filter {
     background-color: #4682B4;
@@ -276,6 +306,11 @@ img {
     line-height: 21px;
 }
 
+.catalog-filter {
+    margin-left: 70px;
+    display: flex;
+}
+
 .catalog-filter-title {
     font-size: 20px;
     font-weight: 700;
@@ -288,7 +323,7 @@ img {
     line-height: 23px;
 }
 
-.price label {
+.price input {
     color: #000;
     font-size: 18px;
     font-weight: 700;
@@ -317,10 +352,9 @@ img {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.products-header {
-    background-color: #FFF;
+.catalog-products {
+    margin-left: 70px;
 }
-
 
 .catalog-products-sorting {
     color: #000;
@@ -335,8 +369,17 @@ img {
     line-height: 21px;
 }
 
-.products-cards {
-    background-color: #FFF;
+.product-list {
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.product-card {
+
+    width: 300px;
 }
 
 .product-card-link {
@@ -392,12 +435,16 @@ img {
     background-color: #FFF;
 }
 
+.pagination-list {
+    display: flex;
+    flex-wrap: no-wrap;
+    gap: 8px;
+    width: 400px;
+    list-style: none;
+}
+
 .pagination-item {
-    width: 60px;
-    height: 60px;
     border-radius: 4px;
-    background-color: #82B3D3;
-    text-align: center;
 }
 
 .pagination-current {
@@ -405,28 +452,33 @@ img {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    background-color: #F2F2F2;
 }
 
 .pagination-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
     color: #FFF;
+    background-color: #82B3D3;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .pagination-link-current {
     color: #000;
-}
-
-.pagination-item-rest {
-    background-color: #FFF;
+    background-color: #f2f2f2;
 }
 
 .pagination-link-rest {
     color:#000;
+    background-color: transparent;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
