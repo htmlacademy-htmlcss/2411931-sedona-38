@@ -1,0 +1,490 @@
+@font-face {
+    font-family: "PT Sans";
+    font-slyle: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-slyle: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "PT Sans" , "Arial" , sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 21px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1200px;
+    min-height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.navigation {
+    display: flex;
+    margin: 0 70px;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.navigation-user {
+    margin-right: 20px;
+}
+
+.navigation-link {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+}
+
+.favorites-quantity {
+    color: #FFF;
+    background-color: #7DB54F;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.button {
+    color:#FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background-color: #756157;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+
+.hero {
+    background-image: url("../image/background/background-hero.jpg");
+    background-color: #394f50;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages {
+    background-color: #FFF;
+}
+
+.advantages-title {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.advantages-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.advantages-item {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(odd) {
+    background-color: rgba(131, 179, 211, 0.20);
+}
+
+.advantages-item.item-wide {
+    color: #fff;
+    background-color: #82B3D3;
+}
+
+.advantages-item-title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.item-wide .advantages-item-title {
+    color: #ffffff;
+}
+
+.advantages-item-description {
+    text-align: center;
+}
+
+
+.rest {
+    background-color: #FFF;
+}
+
+.rest-title {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.rest-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.rest-list {
+    text-align: center;
+}
+
+.rest-item-title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.rest-item:nth-child(odd) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+
+.form {
+    background-color: #fff;
+    text-align: center;
+}
+
+.form-title {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.form-button {
+    color: #ffffff;
+    background-color: #756157;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.newsletter {
+    background-image: url("../image/background/background-newsletter.jpg");
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsletter-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.newsletter-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.newsletter-input {
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.newsletter-button {
+    color:#FFF;
+    background-color: #82B3D3;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none ;
+}
+
+.page-footer {
+    background-color: #FFF;
+}
+
+.footer-number {
+    color: #000;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/**Стили для каталога*/
+.inner-header {
+    margin-left: 70px;
+}
+
+.filter {
+    background-color: #4682B4;
+    color: #FFF;
+    background-image: url("../image/background/background-filter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 78px;
+}
+
+.breadcrumbs {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.catalog-filter {
+    margin-left: 70px;
+    display: flex;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.control {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.price input {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.catalog-filter-submit{
+    color: #fff;
+    background-color: #82B3D3;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+}
+
+.catalog-filter-reset {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.catalog-products {
+    margin-left: 70px;
+}
+
+.catalog-products-sorting {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.select-control {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.product-list {
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.product-card {
+
+    width: 300px;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    color:#000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.product-card-type {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.product-card-price {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.button-details {
+    color: #FFF;
+    background-color: #756157;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-favorite {
+    color: #FFF;
+    background-color: #82B3D3;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+}
+
+.button-selected {
+    background-color: #7DB54F;
+}
+
+.products-footer {
+    background-color: #FFF;
+}
+
+.pagination-list {
+    display: flex;
+    flex-wrap: no-wrap;
+    gap: 8px;
+    width: 400px;
+    list-style: none;
+}
+
+.pagination-item {
+    border-radius: 4px;
+}
+
+.pagination-current {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.pagination-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    color: #FFF;
+    background-color: #82B3D3;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pagination-link-current {
+    color: #000;
+    background-color: #f2f2f2;
+}
+
+.pagination-link-rest {
+    color:#000;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.main-inner .newsletter {
+    background: #fff;
+    color: #000000;
+}
