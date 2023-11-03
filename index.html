@@ -19,24 +19,31 @@
           <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
 
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#" data-test="search">
-              <span class="visually-hidden">
-                Поиск
-              </span>
-            </a>
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+              <a class="navigation-link search-icon" href="#" data-test="search">
+                <span class="visually-hidden">
+                  Поиск
+                </span>
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none">
+                  <path fill="#000"
+                    d="m18.893 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872 0-4.376-3.6-7.956-8-7.956s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z" />
+                </svg>
+              </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
-              <span class="favorites-quantity">12</span>
+          <li class="navigation-list navigation-user-item">
+              <a class="navigation-link favorites-icon" href="#">
+                <span class="favorites-quantity" aria-label="Избранное">12</span>
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="17" fill="none">
+                  <path fill="#000"
+                  d="M9.293 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9-.7-.9-1.1-2.1-1.1-3.3 0-3 2.4-5.4 5.5-5.4 1.3 0 2.5.5 3.5 1.3 1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                </svg>
+              </a>
           </li>
-        </ul>
+          <li>
             <a class="button" href="#">Хочу сюда!</a>
+          </li>
+          </ul>
       </nav>
     </header>
     <main class="main-content" data-test="main">
@@ -50,36 +57,30 @@
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item item-wide">
-            <article>
+            <div class="advantages-item-wrapper">
               <h3 class="advantages-item-title item-title-white">Настоящий городок</h3>
               <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
               <img class="advantages-img" src="image/advantages/advantage-1.jpg" width="800" height="385" alt="Фото города Седона">
-            </article>
           </li>
           <li class="advantages-item">
-            <article>
               <h3 class="advantages-item-title">Небольшая площадь</h3>
               <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
-            </article>
           </li>
           <li class="advantages-item">
-            <article>
               <h3 class="advantages-item-title">Красивая дорога</h3>
               <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </article>
           </li>
           <li class="advantages-item">
-            <article>
               <h3 class="advantages-item-title">Мало туристов</h3>
               <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
-            </article>
           </li>
           <li class="advantages-item item-wide">
-            <article>
+            <img class="advantages-img" src="image/advantages/advantage-2.jpg" width="800" height="385" alt="Достопримечательность Мост Дьявола">
+            <div class="advantages-item-wrapper">
               <h3 class="advantages-item-title item-title-white">Там есть мост дьявола</h3>
               <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img class="advantages-img" src="image/advantages/advantage-2.jpg" width="800" height="385" alt="Достопримечательность Мост Дьявола">
-            </article>
+            </div>
           </li>
         </ul>
       </section>
