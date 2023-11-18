@@ -128,6 +128,18 @@ img {
   text-decoration: none;
 }
 
+.navigation-link:hover{
+  color: #756157;
+}
+
+.navigation-link:focus  {
+  color: #756157;
+}
+
+.navigation-link:active  {
+  color: rgba(117, 98, 87, 0.3);
+}
+
 .navigation-link-current {
 position: relative;
 }
@@ -170,6 +182,31 @@ z-index: 1;
   position: relative;
   padding: 24px 12px 23px 13px;
 }
+
+.search-icon:hover .search-button-icon {
+  fill: #756157;
+}
+
+.search-icon:focus .search-button-icon {
+  fill: #756157;
+}
+
+.search-icon:active .search-button-icon {
+  fill: rgba(117, 98, 87, 0.3);
+}
+
+.favorites-icon:hover .favourites-button-icon{
+  fill: #756157;
+}
+
+.favorites-icon:focus .favourites-button-icon{
+  fill: #756157;
+}
+
+.favorites-icon:active .favourites-button-icon{
+  fill: rgba(117, 98, 87, 0.3);
+}
+
 
 .favorites-quantity {
   position: absolute;
@@ -410,7 +447,7 @@ z-index: 1;
   display: -ms-flexbox;
   display: flex;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -513,6 +550,7 @@ z-index: 1;
   padding-bottom: 104px;
   background-image: url("../image/background/background-newsletter.jpg");
   color: #ffffff;
+  background-color: rgba(70, 102, 135);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -726,6 +764,7 @@ display: flex;
   background-color: #4682B4;
   color: #FFF;
   background-image: url("../image/background/background-filter.jpg");
+  background-color: rgba(50, 77, 93);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -994,13 +1033,9 @@ right: 0;
 top: -8px;
 }
 
-.range-button:hover {
-background: #cecece;
-}
-
 .range-button:active,
 .range-button:focus {
-background: #7a7a7a;
+  border: 2px solid #82b3d3;
 }
 
 .catalog-filter-button {
@@ -1162,6 +1197,10 @@ color: rgb(255, 255, 255, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  max-width: 165px;
   gap: 8px;
   padding: 0;
   margin: 0;
@@ -1601,6 +1640,14 @@ display: flex;
 margin-top: 64px;
 }
 
+.date-to:hover input {
+  background-color: #E6E6E6;
+}
+
+.date-to:focus input {
+  background-color: #E6E6E6;
+}
+
 .date-to::after {
 position: absolute;
 content: "";
@@ -1615,6 +1662,14 @@ opacity: 0.3;
 
 .date-from {
 margin-top: 23px;
+}
+
+.date-from:hover input {
+  background-color: #E6E6E6;
+}
+
+.date-from:focus input {
+  background-color: #E6E6E6;
 }
 
 .date-from::after {
@@ -1885,6 +1940,10 @@ background-color: #f2f2f2;
 fill: #000000;
 }
 
+.btn-input path:active {
+  opacity: 0.2;
+}
+
 .btn-input-minus {
 border-radius: 4px;
 }
@@ -1934,6 +1993,6 @@ background-color: #68a2ca;
 }
 
 .modal-btn:active {
-background-color: #68a2ca;
-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(130 , 179, 211, 1);
+  color: rgb(255, 255, 255, 0.3);
 }
